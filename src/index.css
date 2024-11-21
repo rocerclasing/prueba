@@ -1,0 +1,100 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Reset global */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+:root {
+  --gray-0: #000000;
+  --gray-1: #222222;
+  --gray-2: #dddddd;
+  --gray-3: #fbfbfb;
+  --gray-4: #ffffff;
+  --primary: #8a2be2;
+  --secondary: #20d397;
+  --font-size-1: 1.5rem;
+  --font-size-2: 1.25rem;
+  --font-size-3: 1rem;
+  --font-weight-thin: 300;
+  --font-weight-bold: 600;
+  --font-weight-heavy: 800;
+  --spacer-1: 0.25rem;
+  --spacer-2: 0.5rem;
+  --spacer-3: 1rem;
+  --spacer-4: 1.5rem;
+  --spacer-5: 2rem;
+  --shadows: 7px 7px 7px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  line-height: 1.44;
+}
+
+/* Footer style */
+.footer {
+  background-color: var(--secondary); 
+  color: var(--gray-4); 
+  text-align: center;
+  padding: var(--spacer-3);
+  margin-top: var(--spacer-3);
+  font-size: var(--font-size-3);
+}
+
+/* Responsive Styles */
+@media (max-width: 1440px) {
+  /* Styles for 1440px */
+  .container {
+    max-width: 1440px;
+  }
+  .text-xl {
+    font-size: 1.25rem;
+  }
+}
+
+@media (max-width: 1280px) {
+  /* Styles for 1280px */
+  .container {
+    max-width: 1280px;
+  }
+  .text-lg {
+    font-size: 1.125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  /* Styles for 480px */
+  .container {
+    max-width: 480px;
+    padding-left: var(--spacer-1);
+    padding-right: var(--spacer-1);
+  }
+  .text-base {
+    font-size: 1rem;
+  }
+  .footer {
+    font-size: var(--font-size-2);
+    padding: var(--spacer-2);
+  }
+}
+
+/* High resolution (2x) media queries */
+@media (min-resolution: 192dpi) {
+  /* Styles for 2x resolution */
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+}
+
+.card {
+  background-color: #f0f0f0; /* Color de fondo */
+  padding: 20px; /* Espaciado interno */
+  border-radius: 10px; /* Bordes redondeados */
+  margin: 10px 0; /* Margen entre las tarjetas */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
